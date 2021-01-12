@@ -89,6 +89,7 @@ ____________________
 - must have a return type 
 - invoked explicitly
 - name may or may not be same as class name
+- Methods used to obtain information about an object are known as accessor methods.
 _______________________
 
 ### Access Modifiers
