@@ -31,6 +31,7 @@ _________________________
 
 - can be defined as a blueprint from which you can create an individual object
 - does not consume any space
+- When you are declaring a class in java, you are just creating a new data type
 
 **[Class Example](./img/class.png)**
 _______________________
