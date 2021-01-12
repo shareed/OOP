@@ -90,3 +90,15 @@ ____________________
 - name may or may not be same as class name
 _______________________
 
+### Access Modifiers
+*There are two types of modifiers in java: access modifiers and non-access modifiers.* 
+- [access modifiers](/img/accessmodifiers.png) specifies accessibility (scope) of a data member, method, constructor or class, there are 4 types of java access modifiers:
+    - private
+    - default
+    - protected
+    - public
+
+- There are many non-access modifiers such as static, abstract, synchronized, native, volatile, transient etc.
+- If you are overriding any method, overridden method (i.e. declared in subclass) must not be more restrictive [access modifiers method overriding example](/img/accessmodifiersmethodoverriding.png)
+
+__________________________________

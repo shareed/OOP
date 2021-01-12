@@ -1,12 +1,14 @@
 # Object Oriented Programming Pillars(Java)
 - Inheritance
+    - a mechanism in which one object acquires all the properties and behaviors of a parent object
 - Polymorphism
+    - The ability of an object to take on many forms
 - Encapsulation
 - Abstraction
 ____________________
 
 ## Inheritance
-- a mechanism in which one object acquires all the properties and behaviors of a parent object
+
 - you can create new classes that are built upon existing classes
 - when you inherit from an existing class, you can reuse methods and fields of the parent class
 - you can add new methods and fields in your current class also
@@ -117,3 +119,73 @@ ____________________
 - return type must be same or covariant
 
 **[Method Overiding Replit](https://repl.it/@shanreed1/methodoverriding)**
+
+__________________________
+
+## Encapsulation
+**A process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.**
+
+- you can create a fully encapsulated class in Java by making all the data members of the class private
+- then you can use setter and getter methods to set and get the data in it 
+**The Java Bean class is the example of a fully encapsulated class**
+
+**Advantages of Encapsulation**
+- By providing only a setter or getter method, you can make the class read-only or write-only(you can skip the getter or setter methods but they provide you the control over the data
+    - Suppose you want to set the value of id which should be greater than 100 only, you can write the logic inside the setter method. You can write the logic not to store the negative numbers in the setter methods.
+- It is a way to achieve data hiding in Java because other class will not be able to access the data through the private data members.
+- The encapsulate class is easy to test. So, it is better for unit testing.
+
+**[Encapsulation Class Example](../img/encapsulationclass.png)**
+- a class called Student that has only one field with its setter and getter methods
+
+**[Encapsulation Read Only Class Example](../img/encapsulationreadonlyclass.png)**
+-  it has only a getter to access the college name. If the user tries to change the value of the college name, a compile-time error is rendered. 
+
+
+**[Encapsulation Write Only Class Example](../img/encapsulationwriteonlyclass.png)**
+-  it has only setters to change the value of the college name and cannot read the college name. Even if tried to access outside of this class a compile-time error is displayed only because the variable is declared as private. 
+
+**[Encapusulation Replit](https://repl.it/@shanreed1/encapsulation#Main.java)**
+
+________________________
+
+
+## Abstraction
+**A process of hiding the implementation details and showing only functionality to the user**
+
+- shows only essential things to the user and hides the internal details
+- lets you focus on what the object does instead of how it does it
+
+**Generalization**
+**The process of extracting shared characteristics from two or more classes, and combining them into a generalized superclass. Shared characteristics can be attributes, associations, or methods.**
+
+[Generalization Example](../img/generalization.png)
+    - The classes Piece of Luggage  and Piece of Cargo partially share the same attributes
+    - From a domain perspective, the two classes are also very similar
+    - During generalization, the shared characteristics  are combined and used to create a new superclass Freight
+    - Piece of Luggage and Piece of Cargo become subclasses of the class Freight
+    - Therefore the properties that are common to the classes Piece of Luggage and Piece of Cargo are placed in the superclass Freight - Identification, Weight and ID-Number are those properties. 
+
+**Specialization**
+**Creating new subclasses from an existing class. If it turns out that certain attributes, associations, or methods only apply to some of the objects of the class, a subclass can be created.**
+- [Specialization Example](../img/specialization.png)
+    - if there is a property that is only applicable to a specific subclass, such as Degree of  Hazardousness, that property is placed in the class Piece of Cargo where-in this class also has all the properties of the Freight class with the concept of Generalization. 
+
+### Ways to achieve abstraction?
+- Abstract class (0 to 100%)
+- Interface (100%)
+__________________________________
+### Abstract Class
+- must be declared with an abstract keyword
+- can have abstract and non-abstract methods
+- cannot be instantiated
+- can have constructors and static methods also
+- can have final methods which will force the subclass not to change the body of the method
+
+#### Abstract Method
+A method which is declared as abstract and does not have implementation is known as an abstract method. 
+
+`abstract void printStatus();  //no method body and abstract` 
+ 
+[Abstract class with abstract method example](../img/abstractclassmethod.png)
+[Abstarct class Replit](https://repl.it/@shanreed1/abstractclass#Main.java)
