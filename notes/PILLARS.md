@@ -4,6 +4,7 @@
 - Polymorphism
     - The ability of an object to take on many forms
 - Encapsulation
+    - A process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines
 - Abstraction
 ____________________
 
@@ -178,7 +179,7 @@ __________________________________
 ### Abstract Class
 - must be declared with an abstract keyword
 - can have abstract and non-abstract methods
-- cannot be instantiated
+- cannot be instantiated, can only have references of abstract class type
 - can have constructors and static methods also
 - can have final methods which will force the subclass not to change the body of the method
 
