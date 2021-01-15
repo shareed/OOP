@@ -31,6 +31,7 @@ _________________________
 
 - can be defined as a blueprint from which you can create an individual object
 - does not consume any space
+- When you are declaring a class in java, you are just creating a new data type
 
 **[Class Example](./img/class.png)**
 _______________________
@@ -88,6 +89,7 @@ ____________________
 - must have a return type 
 - invoked explicitly
 - name may or may not be same as class name
+- Methods used to obtain information about an object are known as accessor methods.
 _______________________
 
 ### Access Modifiers
