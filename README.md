@@ -104,3 +104,11 @@ _______________________
 - If you are overriding any method, overridden method (i.e. declared in subclass) must not be more restrictive [access modifiers method overriding example](/img/accessmodifiersmethodoverriding.png)
 
 __________________________________
+
+
+[Java Enums:](/img/enum.png)
+Enums were introduced in Java 5.0. Enums restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums.
+
+With the use of enums it is possible to reduce the number of bugs in your code.
+
+For example, if we consider an application for a fresh juice shop, it would be possible to restrict the glass size to small, medium and large. This would make sure that it would not allow anyone to order any size other than the small, medium or large.

@@ -1,4 +1,4 @@
-**I.** Object Oriented Programming terminology (35%) know 4 concepts of OOP- be able to define them & speak to use
+## I. Object Oriented Programming terminology (35%)
 
 
 **Objects**
@@ -40,7 +40,43 @@ Example: Lets say we have
     
 **Encapsulation and abstraction can help us develop and maintain a big codebase**
 
-
-    __________________
 - **Method overriding,** on the other hand, occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.
 - **Method Overloading:** When there are multiple functions with same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by change in number of arguments or/and change in type of arguments.
+___________________________
+
+II.  JAVA basic & advanced (45%)
+**Syntax**
+**Data Types**
+**Conditional Statements**
+**Loops**
+**Classes**
+**Interfaces**
+- an interface can be defined as a contract between objects on how to communicate with each other
+- an interface defines the methods, a deriving class(subclass) should use. But the implementation of the methods is totally up to the subclass
+
+**Abstract Classes**
+**Exceptions**
+**Collections**
+_________
+ **A Java program it can be defined as a collection of objects that communicate by invoking each other's methods**
+ - **Object** - has states(Instance Variables) and behaviours(methods)
+ - **Class** - a template/ blue print that describes the behaviours/states that a object of its type support
+ - **Method** - where the logic is written, data is manipulated and all the actions are executed
+ - **Instance Variables** - Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.
+ - **main() method** - where processing starts and is a mandatory part of every Java program
+ - **Identifiers** Names used for classes, variables and methods are called identifiers
+    - should begin with a letter (A to Z or a to z), currency character ($) or an underscore (_)
+    - After the first character identifiers can have any combination of characters
+_____________________
+**Java Modifiers:**
+- used to modify classes, methods
+
+**Access Modifiers:** default, public, protected, private
+
+**Non-access Modifiers:** final, abstract, strictfp
+
+_____________
+**Java Variables:**
+Local Variables
+Class Variables (Static Variables)
+Instance Variables (Non-static variables)
