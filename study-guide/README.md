@@ -23,11 +23,11 @@
 - [x] Relationships
 - [x] Normalization
 - [ ] Syntax
-- [ ] DDL
+- [x] DDL
 - [x] Constraints
-- [ ] DML
-- [ ] Joins
-- [ ] Unions
+- [x] DML
+- [x] Joins
+- [x] Unions
 
 #### HTML
 - [ ]

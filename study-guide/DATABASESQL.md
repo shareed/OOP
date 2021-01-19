@@ -28,6 +28,7 @@
 - There are as many as six or seven stages of normalization, but generally a database is acceptable if it reaches the 3rd stage, called Third Normal Form.
 ## Syntax
 ## DDL
+- Data Definition Language - CREATE, ALTER, DROP
 ## Contraints
 - rules that an RDBMS can be made to follow when managing data in a table
 - There are 6 common constraints:
@@ -38,11 +39,19 @@
     5. Check Constraint
     6. Default Constraint
 ## DML
+- Data Manipulation Language - SELECT, INSERT, UPDATE, DELETE
 ## Joins
-- When selecting data from multiple tables with relationships
+- a means for combining fields from two or more tables by using values common to each
 - Cross Joins
 - Natural Joins
 - Inner Joins
 - Left (Outer) Joins
 - Right (Outer) Joins
 ## Unions
+- used to combine the result-set of two or more SELECT statements
+- Each SELECT statement within UNION must have the same number of columns
+- The columns must also have similar data types
+- The columns in each SELECT statement must also be in the same order
+## References
+[More on SQL...](/databaseSQL/README.md)
+[More on Relational Datbases...](https://github.com/STR-FRONT-END/Java/blob/main/Databases/README.md)
