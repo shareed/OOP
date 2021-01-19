@@ -1,77 +1,96 @@
-# JAVA basic & advanced
-## [Syntax](https://github.com/STR-FRONT-END/Java/blob/main/BASICS.md)
+# JAVA
+## Syntax
 #### Statement ( a line of code)
 - Expression
 - Control flow or conditional, which can be divided into decision(uses boolean logic) and loop(repeat a statement) statements 
+
+[More on Java Syntax...](https://github.com/STR-FRONT-END/Java/blob/main/BASICS.md)
 _________________________________
-## [Data Types](https://github.com/STR-FRONT-END/Java/blob/main/DATATYPES.md)
-Divided into two groups
-#### Primitive (created by the programmer)
+
+## Data Types(divided into two groups)
+##### Primitive (created by the programmer)
 - [includes 8 data types:](../img/javadatatypes.png) byte, short, int, long(`15000000000L`), float(`5.75f`), double(`19.99d`), boolean and char (single character, `'A'` or `'c'`: ASCII values to display certain characters, `char a = 65, b = 66, c = 67;`)
 - Primitive number types are divided into two groups:
+
 **Integer**
 - stores whole numbers, positive or negative without decimals
 - types are `byte`, `short`, `int` and `long`
+
 **Floating** 
 - represents numbers with a fractional part, containing one or more decimals
 - types are: `float` and `double`
-
-
-#### Non-primitive (already defined in Java)
-
+##### Non-primitive (already defined in Java)
 - Examples: Strings, Arrays, Classes, Interface, etc.
 - called reference types because they refer to objects
-- can be null
-- come with methods to perform certain operations
-- starts with an uppercase letter
-- all the same size
-#### Reference Data Types: used to access objects
+##### Reference Data Types: used to access objects
+[More on Data Types...](../java/DATATYPES.md)
 _____________________________
-## [Conditional Statements](../java/CONDITIONALS.md)
-### Decision making structures
-- one or more conditions to be evaluated or tested by the program, along with a statement or statements that are to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false
-### Decision making statements
+
+## Conditional Statements
 - if statement 
-    - Boolean expression followed by one or more statements
-    - If the Boolean expression evaluates to true then the block of code inside the if statement will be executed
 - if..else statement
-    - if statement followed by an optional else statement, which executes when the Boolean expression is false
-    - if statement can have zero or one else's
 - if...else if 
-    - if statement followed by an optional else if...else statement
-    - if statement can have zero to many else if's
-    - if using a else statement it must come last
-    - if else if succeeds, none of the remaining else if's or else's will be tested.
 - nested if statement
-    - using one if or else if statement inside another if or else if statement
 - switch statement
-    -  allows a variable to be tested for equality against a list of values
-    - each value is called a case
-    - the variable being switched on is checked for each case
-    - the variable used in a switch statement can only be integers, convertable integers (byte, short, char), strings and enums.
-    - value for a case must be the same data type as the variable in the switch and it must be a constant or a literal
-    - not every case needs to contain a break
-    - no break is needed in the default case
+
+[More on Java Conditionals....](../java/CONDITIONALS.md)
+[More on Java Conditionals....](https://github.com/STR-FRONT-END/Java/blob/main/CONDITIONALS.md)
 __________________
 
-## [Looping](../java/LOOPING.md) (control flow statements)
+## Looping(control flow statements)
 - allows us to execute a statement or group of statements multiple times
-### for loop
+##### for loop
 - used to repeatedly execute a block of code a specified number of times
-### while loop
+##### while loop
 - used to repeatedly execute a block of code until a specified condition is no longer satisfied
-### do-while loop
+##### do-while loop
 - used to repeatedly execute a block of code until a specified condition is no longer satisfied, will run at least once
-### Enhance For Loop
+##### enhance For Loop
 -  mainly used to traverse collection of elements including arrays
+
+[More on Java Loops](../java/LOOPING.md) 
 _______________________
 
 ## Classes
+- you write classes and work with objects
+- a template/ blue print that describes the behaviours/states that a object of its type support(Java structure that you define)
+- you instantiate objects from classes, making that object follow the class template
+##### State
+- properties like size, weight, propulsion, etc.
+##### Behavior
+- methods like communicate(), track(), walk(), fly() etc.
+##### Main Method
+`public static void main(String[] args)`
+##### Access modifiers
+-  helps to restrict the scope of a class, constructor, variable, method, or data member ([Default, Private, Protected, Public](../img/accessmodifiers2.md))
+##### IS-A vs. HAS-A relationships
+- An IS-A relationship represent a class that is a subclass of another.
+- A HAS-A relationship is a class that has a field that references another class.
+
+##### Class Constructors
+- initializes the state of a class
+
+##### Super keyword
+- the keyword super is a way to refer to a parent class (from within the child class), example: `super.parentMethod();`
+
+[More on Classes...](https://github.com/STR-FRONT-END/Java/blob/main/CLASSES.md)
+[More on Classes andConstructors...](../README.md)
+____________________________________
+
 ## Interfaces
 - is like a contract between objects on how to communicate with each other
-- the interface defines the methods, a deriving class(subclass) should use. But the implementation of the methods is totally up to the subclass
+- the interface defines the methods, a deriving class(subclass) should use
+- the implementation of the methods is totally up to the subclass
+[More on Interfaces](../java/INTERFACE.md)
+__________________________
 
 ## Abstract Classes
+- a restricted class that cannot be used to create objects (to access it, it must be inherited from another class)
+- Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from)
+- Can have both abstract and regular methods
+
+[More on Abstarct Classes...](../README.md)
+___________________________________
 ## Exceptions
 ## Collections
 _________

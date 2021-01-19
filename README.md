@@ -5,10 +5,6 @@
 ### OOP Concepts
 - Object
 - Classes
-- Inheritance
-- Polymorphism
-- Abstraction
-- Encapsulation
 
 **[Object-Oriented Programming System](./img/oopsystem.png)**
 
@@ -106,6 +102,23 @@ _______________________
 
 __________________________________
 
+### Abstract Class
+**A restricted class that cannot be used to create objects (to access it, it must be inherited from another class)**
+- achieves security - hide certain details and only show the important details of an object
+- must be declared with an abstract keyword
+- can have abstract and non-abstract methods
+- cannot be instantiated, can only have references of abstract class type `Animal myObj = new Animal(); // will generate an error if the class is abstract`
+- To access the abstract class, it must be inherited from another class
+- can have constructors and static methods also
+- can have final methods which will force the subclass not to change the body of the method
+
+#### Abstract Method
+A method which is declared as abstract and does not have implementation is known as an abstract method. 
+
+`abstract void printStatus();  //no method body and abstract` 
+ 
+[Abstract class with abstract method example](../img/abstractclassmethod.png)
+[Abstarct class Replit](https://repl.it/@shanreed1/abstractclass#Main.java)
 
 [Java Enums:](/img/enum.png)
 Enums were introduced in Java 5.0. Enums restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums.
