@@ -91,8 +91,30 @@ __________________________
 
 [More on Abstarct Classes...](../README.md)
 ___________________________________
+
 ## Exceptions
+- different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things
+### TRY and CATCH
+- **try** statement allows you to define a block of code to be tested for errors while it is being executed
+- **catch** statement allows you to define a block of code to be executed, if an error occurs in the try block
+- **finally** statement lets you execute code, after try...catch, regardless of the result
+- **throw** statement allows you to create a custom error
+    - - used together with an exception type. There are many exception types available in Java: ArithmeticException, FileNotFoundException, ArrayIndexOutOfBoundsException, SecurityException, etc:
+
+[More on Exceptions](../java/EXCEPTIONS.md)
+________________________________________
+
 ## Collections
+- **Collection:** interface implemented by all collections
+- **Collections:** class with static methods used to manipulate the collection object
+- **Ordering:** determines where an element is in a collection
+- **Sorting:** determines an element's position based on its value; it can be alphabetical, numerical or other
+- List, Set and Queue are interfaces that extend Collection
+    - **List:** is an interface that specifies an order
+    - **Set:** is an interface that specifies a collection that doesn't allow duplicate elements
+    **Queue:** is a collection that maintains order
+
+[More on Collections....](https://github.com/STR-FRONT-END/Java/blob/main/COLLECTIONS.md)
 _________
  **A Java program it can be defined as a collection of objects that communicate by invoking each other's methods**
  - **Object** - has states(Instance Variables) and behaviours(methods)

@@ -20,11 +20,11 @@
 - [x] Data Structures
 #### Database/SQL
 - [x] Structure
-- [ ] Relationships
-- [ ] Normalization
+- [x] Relationships
+- [x] Normalization
 - [ ] Syntax
 - [ ] DDL
-- [ ] Constraints
+- [x] Constraints
 - [ ] DML
 - [ ] Joins
 - [ ] Unions
