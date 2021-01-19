@@ -1,13 +1,17 @@
 # JAVA basic & advanced
-## Syntax
-## Data Types
+## [Syntax](https://github.com/STR-FRONT-END/Java/blob/main/BASICS.md)
+#### Statement ( a line of code)
+- Expression
+- Control flow or conditional, which can be divided into decision(uses boolean logic) and loop(repeat a statement) statements 
+_________________________________
+## [Data Types](https://github.com/STR-FRONT-END/Java/blob/main/DATATYPES.md)
+- Each variable specifies its own type
 Data types are divided into two groups
 #### Primitive (created by the programmer)
 - specifies the size and type of variable values, and it has no additional methods
 - always a value and starts with a lowercase letter
 - size depends on the data type
 - [includes 8 data types:](../img/javadatatypes.png) byte, short, int, long(`15000000000L`), float(`5.75f`), double(`19.99d`), boolean and char (single character, `'A'` or `'c'`: ASCII values to display certain characters, `char a = 65, b = 66, c = 67;`)
-
 ##### Numbers
 Primitive number types are divided into two groups:
 
@@ -24,17 +28,41 @@ Primitive number types are divided into two groups:
 ***The most used for numbers are int (for whole numbers) and double (for floating point numbers), but you can use other to save memory. For example, The byte data type can store whole numbers from -128 to 127. This can be used instead of int or other integer types to save memory when you are certain that the value will be within -128 and 127***
 
 
-
-
 #### Non-primitive (already defined in Java)
+
 - Examples: Strings, Arrays, Classes, Interface, etc.
 - called reference types because they refer to objects
 - can be null
 - come with methods to perform certain operations
 - starts with an uppercase letter
 - all the same size
-
+#### Reference Data Types: used to access objects
+_____________________________
 ## Conditional Statements
+### Decision making structures
+- one or more conditions to be evaluated or tested by the program, along with a statement or statements that are to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false
+### Decision making statements
+- if statement 
+    - Boolean expression followed by one or more statements
+    - If the Boolean expression evaluates to true then the block of code inside the if statement will be executed
+- if..else statement
+    - if statement followed by an optional else statement, which executes when the Boolean expression is false
+    - if statement can have zero or one else's
+- if...else if 
+    - if statement followed by an optional else if...else statement
+    - if statement can have zero to many else if's
+    - if using a else statement it must come last
+    - if else if succeeds, none of the remaining else if's or else's will be tested.
+- nested if statement
+    - using one if or else if statement inside another if or else if statement
+- switch statement
+    -  allows a variable to be tested for equality against a list of values
+    - each value is called a case
+    - the variable being switched on is checked for each case
+    - the variable used in a switch statement can only be integers, convertable integers (byte, short, char), strings and enums.
+    - value for a case must be the same data type as the variable in the switch and it must be a constant or a literal
+    - not every case needs to contain a break
+    - no break is needed in the default case.
 ## Loops
 ## Classes
 ## Interfaces

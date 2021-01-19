@@ -9,7 +9,7 @@
 - [x] Abstraction
 ### Java
 - [x] Data Types
-- [ ] Conditional Statements
+- [x] Conditional Statements
 - [ ] Looping Constructs
 - [ ] Usage of Keywords
 - [ ] String Manipulation
