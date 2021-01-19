@@ -80,7 +80,7 @@ If we have to perform only one operation, having same name of the methods increa
 - You can have any number of [main methods](../img/overloadingmain.png) in a class by method overloading. But JVM calls main() method which receives string array as arguments only. 
 ____________________
 
-## Method Overriding
+### Method Overriding
 **If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.**
 - if a subclass provides the specific implementation of the method that has been declared by one of its parent class, it is known as method overriding.
 

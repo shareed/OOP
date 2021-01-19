@@ -5,27 +5,16 @@
 - Control flow or conditional, which can be divided into decision(uses boolean logic) and loop(repeat a statement) statements 
 _________________________________
 ## [Data Types](https://github.com/STR-FRONT-END/Java/blob/main/DATATYPES.md)
-- Each variable specifies its own type
-Data types are divided into two groups
+Divided into two groups
 #### Primitive (created by the programmer)
-- specifies the size and type of variable values, and it has no additional methods
-- always a value and starts with a lowercase letter
-- size depends on the data type
 - [includes 8 data types:](../img/javadatatypes.png) byte, short, int, long(`15000000000L`), float(`5.75f`), double(`19.99d`), boolean and char (single character, `'A'` or `'c'`: ASCII values to display certain characters, `char a = 65, b = 66, c = 67;`)
-##### Numbers
-Primitive number types are divided into two groups:
-
+- Primitive number types are divided into two groups:
 **Integer**
 - stores whole numbers, positive or negative without decimals
-- types are `byte`, `short`, `int` and `long`. Which type you should use, depends on the numeric value.
-
+- types are `byte`, `short`, `int` and `long`
 **Floating** 
 - represents numbers with a fractional part, containing one or more decimals
 - types are: `float` and `double`
-- precision of a floating point value indicates how many digits the value can have after the decimal point( precision of float is only six or seven decimal digits, while double variables have a precision of about 15 digits)
-- can also be a scientific number with an "e" to indicate the power of 10(35e3f, or 12E4d)
-
-***The most used for numbers are int (for whole numbers) and double (for floating point numbers), but you can use other to save memory. For example, The byte data type can store whole numbers from -128 to 127. This can be used instead of int or other integer types to save memory when you are certain that the value will be within -128 and 127***
 
 
 #### Non-primitive (already defined in Java)
@@ -38,7 +27,7 @@ Primitive number types are divided into two groups:
 - all the same size
 #### Reference Data Types: used to access objects
 _____________________________
-## Conditional Statements
+## [Conditional Statements](../java/CONDITIONALS.md)
 ### Decision making structures
 - one or more conditions to be evaluated or tested by the program, along with a statement or statements that are to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false
 ### Decision making statements
@@ -62,8 +51,21 @@ _____________________________
     - the variable used in a switch statement can only be integers, convertable integers (byte, short, char), strings and enums.
     - value for a case must be the same data type as the variable in the switch and it must be a constant or a literal
     - not every case needs to contain a break
-    - no break is needed in the default case.
-## Loops
+    - no break is needed in the default case
+__________________
+
+## [Looping](../java/LOOPING.md) (control flow statements)
+- allows us to execute a statement or group of statements multiple times
+### for loop
+- used to repeatedly execute a block of code a specified number of times
+### while loop
+- used to repeatedly execute a block of code until a specified condition is no longer satisfied
+### do-while loop
+- used to repeatedly execute a block of code until a specified condition is no longer satisfied, will run at least once
+### Enhance For Loop
+-  mainly used to traverse collection of elements including arrays
+_______________________
+
 ## Classes
 ## Interfaces
 - is like a contract between objects on how to communicate with each other
