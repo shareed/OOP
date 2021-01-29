@@ -1,11 +1,28 @@
-# Exceptions
+# Java Errors
+- There are two types of errors:
 
-**Exceptions are events that occur during the execution of programs that disrupt the normal flow of instructions (e.g. divide by zero, array access out of bound, etc.)**
+1. Compile time errors
+    - Compile time errors can be again classified into two types:
+        1. Syntax Errors
+            - Instead of declaring `int a;` you mistakenly declared it as `in a;` for which compiler will throw an error.
+        2. Semantic Errors
+            - You have declared a variable int a; and after some lines of code you again declare an integer as int a;. All these errors are highlighted when you compile the code
+
+2. Runtime errors
+    - A Runtime error is called an Exceptions error. It is any event that interrupts the normal flow of program execution.
+    - arithmetic exception, Nullpointer exception, Divide by zero exception, etc.
+
+
+# Exceptions
+**An Exception is a specific subclass of Throwable and it represents all possible exceptions that may occur within your program and are out of developers control, they are events that occur during the execution of programs that disrupt the normal flow of instructions (e.g. divide by zero, array access out of bound, etc.)**
 
 - an exception is an object that wraps an error event that occurred within a method and contains: 
     1. Information about the error including its type 
     2. The state of the program when the error occurred 
     3. Optionally, other custom information 
+
+
+**Exceptions are further divided into checked and unchecked exceptions**
 
 **Categories of Exceptions**
 
@@ -14,6 +31,7 @@
 - Errors
 
 ### Checked Exceptions
+**You must handle any checked exception in code by either using a try/catch/finally block or by rethrowing the exception using the throws keyword**
 - The compiler enforces that you handle them explicitly. 
 - Methods that generate checked exceptions must declare that they throw them. 
 - Methods that invoke other methods that throw checked exceptions must either handle them (they can be reasonably expected to recover) or let them propagate by declaring that they throw them. 
@@ -21,7 +39,7 @@
 **If you use FileReader class in your program to read data from a file, if the file specified in its constructor doesn't exist, then a FileNotFoundException occurs, and the compiler prompts the programmer to handle the exception**. 
 
 ### Unchecked Exceptions
-- Errors and RuntimeExceptions are unchecked — that is, the compiler does not enforce (check) that you handle them explicitly. 
+- Errors and RuntimeExceptions(parent class of all unchecked exceptions) are unchecked — that is, the compiler does not enforce (check) that you handle them explicitly. 
 - Methods do not have to declare that they throw them (in the method signatures). 
 - It is assumed that the application cannot do anything to recover from these exceptions (at runtime). 
 [Example](../img/exception2.png)
@@ -32,12 +50,18 @@ These are not exceptions at all, but problems that arise beyond the control of t
 **For example, if a stack overflow occurs, an error will arise. They are also ignored at the time of compilation.**
 ________________________
 
-## [Exception Hierarchy](../img/exceptionhierarchy.png)
- - All exception classes are subtypes of the java.lang.Exception class. 
- - The exception class is a subclass of the Throwable class.
- - Other than the exception class there is another subclass called Error which is derived from the Throwable class. 
+## [Exception Hierarchy](../img/exceptionhierarchy3.png)
+ - All exception classes are subtypes of the [java.lang.Exception class](../img/exceptionhierarchy.png). 
+### Throwable Class
+- All exception classes are subclass of the Throwable class, they extend the Throwble class
+- **The Exception class** represents the exceptions that can be handled by our program, and our program can be recovered from this exception using try and catch block
+    - **A Runtime exception** is a sub-class of the exception class. The Exception of these type represents exception that occur at the run time and which cannot be tracked at the compile time. An excellent example of same is divide by zero exception, or null pointer exception, etc
+    - **IO exception** is generated during input and output operations
+    - **Interrupted exceptions** in Java, is generated during multiple threading.
+- Other than the exception class there is another subclass of Throwable called Error. It defines the exception or the problems that are not expected to occur under normal circumstances by our program, example Memory error, Hardware error, JVM error, etc 
 
 ## [Catching Exceptions](../img/exceptioncatching.png)
+**You must handle any checked exception in code by either using a try/catch/finally block or by rethrowing the exception using the throws keyword**
 - A method catches an exception using a combination of the try and catch keywords
 - A try/catch block is placed around the code that might generate an exception
 - Code within a try/catch block is referred to as protected code

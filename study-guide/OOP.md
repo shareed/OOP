@@ -38,8 +38,9 @@ Example: Lets say we have
 
 ### 4. Abstraction
 **Only displaying the essential details to the user**
+- use when two or more subclasses are also doing the same thing in different ways through different implementations
 -  A pilot flying an airplane turns on the light for everybody to to put their seat belt on, he has no idea how pressing the button from the cockpit makes all the seatbealt lights come on he just knows he needs to press the btton to get it done
-- can be achieved by sing interfaces and abstract classes
+- can be achieved by using interfaces and abstract classes
     
 **Encapsulation and abstraction can help us develop and maintain a big codebase**
 

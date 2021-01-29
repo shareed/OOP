@@ -51,3 +51,15 @@ Interfaces are not classes, and can extend more than one parent interface.
 
 The extends keyword is used once, and the parent interfaces are declared in a comma-separated list.
 `public interface Hockey extends Sports, Event`
+_____________________
+Abstract Classes VS Interfaces.
+Below is a list of some differences between the two:
+
+- A class can extend only one class (abstract or not) but can implement multiple interfaces
+- Interface variables are implicitly public static final
+- Abstract classes can declare any modifiers on instance variables
+- Interfaces can (as of Java 8) provide default methods, but all others are public abstract
+- Abstract classes can declare any modifiers on their methods
+**If you wanted to develop and enforce a certain hierarchy of functionality where state and behavior was tracked, then you would use an abstract class**
+
+**If you want a class to be free to implement functionality without constrained to a hierarchy, then an interface is a better approach**
